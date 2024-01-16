@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary"
+    >
+
+    <RelativeLayout
+        android:id="@+id/movementLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+
+            >
+
+
+            <Button
+                android:id="@+id/left_btn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/btn_default"
+                android:drawableRight="@drawable/ic_chevron_pointing_to_the_left"
+                android:paddingRight="25dp"
+                />
+
+            <Button
+                android:id="@+id/right_btn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="75dp"
+                android:drawableRight="@drawable/ic_right_chevron"
+                android:background="@drawable/btn_default"
+                android:paddingRight="20dp"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+
+            >
+
+            <Button
+                android:id="@+id/forward_btn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/btn_default"
+                android:drawableTop="@drawable/ic_chevron_arrow_up"
+                android:paddingTop="20dp"
+                />
+
+            <Button
+                android:id="@+id/reverse_btn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/btn_default"
+                android:drawableBottom="@drawable/ic_chevron_arrow_down"
+                android:paddingBottom="20dp"
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/movementLayout"
+        android:layout_marginTop="50dp"
+        >
+
+        <Button
+            android:id="@+id/btnOpenJaw"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/btn_bluetooth"
+            android:layout_marginLeft="90dp"
+            android:drawableTop="@drawable/ic_openjaw"
+            android:paddingTop="22dp"
+            />
+
+        <Button
+            android:id="@+id/btnCloseJaw"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/btn_bluetooth"
+            android:drawableTop="@drawable/ic_closejaw"
+            android:paddingTop="22dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/movementLayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="54dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnLiftDown"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/btn_bluetooth"
+            android:drawableTop="@drawable/ic_arrow_down"
+            android:paddingTop="22dp" />
+
+        <Button
+            android:id="@+id/btnLiftUp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/btn_bluetooth"
+            android:drawableTop="@drawable/ic_arrow_up"
+            android:paddingTop="22dp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bluetooth_connect_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/btn_bluetooth"
+        android:drawableTop="@drawable/ic_power"
+        android:paddingTop="13dp" />
+
+</RelativeLayout>

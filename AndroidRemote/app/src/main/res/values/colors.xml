@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#161920</color>
+    <color name="colorPrimaryDark">#161920</color>
+    <color name="colorAccent">#10afae</color>
+    <color name="colorBtnGradient">#10afae</color>
+    <color name="bluetoothColor">#2c3e50</color>
+    <color name="bluetoothGlowingColor">#10afae</color>
+</resources>
